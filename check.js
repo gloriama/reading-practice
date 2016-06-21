@@ -1,6 +1,7 @@
 var fs = require('fs');
-var answerContents = fs.readFileSync('manual_list.txt', 'utf-8');
-var practiceContents = fs.readFileSync('OUTPUT.txt', 'utf-8');
+var config = require('./config');
+var answerContents = fs.readFileSync(config.ANSWER_FILE_NAME, 'utf-8');
+var practiceContents = fs.readFileSync(config.PRACTICE_FILE_NAME, 'utf-8');
 
 var answers = answerContents.split('\n').reduce(function(acc, answerLine) {
   var questionAnswer = answerLine.split('　'); // two-tuple

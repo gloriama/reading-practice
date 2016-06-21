@@ -1,0 +1,2 @@
+exports.ANSWER_FILE_NAME = 'ANSWERS.txt';
+exports.PRACTICE_FILE_NAME = 'PRACTICE.txt';
